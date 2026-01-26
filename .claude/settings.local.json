@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm start)",
+      "Bash(npx tsc:*)",
+      "Bash(node scripts/fetchCelebs.mjs:*)"
+    ]
+  }
+}
