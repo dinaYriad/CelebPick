@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   SafeAreaView,
+  ScrollView,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -25,62 +26,67 @@ export default function HomeScreen({ navigation }: Props) {
   return (
     <GradientBackground type="primary">
       <SafeAreaView style={styles.container}>
-        <View style={styles.content}>
-          {/* App Title with sparkles */}
-          <View style={styles.titleContainer}>
-            <Text style={styles.sparkle}>✨</Text>
-            <Text style={styles.title}>CelebPick</Text>
-            <Text style={styles.sparkle}>✨</Text>
-          </View>
-          <Text style={styles.subtitle}>Match the stars & shine bright!</Text>
+        <ScrollView 
+          contentContainerStyle={styles.scrollContent}
+          showsVerticalScrollIndicator={false}
+        >
+          <View style={styles.content}>
+            {/* App Title with sparkles */}
+            <View style={styles.titleContainer}>
+              <Text style={styles.sparkle}>✨</Text>
+              <Text style={styles.title}>CelebPick</Text>
+              <Text style={styles.sparkle}>✨</Text>
+            </View>
+            <Text style={styles.subtitle}>Match the stars & shine bright!</Text>
 
-          {/* Game Mode Cards */}
-          <View style={styles.modesContainer}>
-            {/* Name → Face Mode */}
-            <TouchableOpacity
-              activeOpacity={0.8}
-              onPress={() => navigation.navigate('Quiz', { mode: 'nameToFace' })}
-            >
-              <LinearGradient
-                colors={['#B794F6', '#9F7AEA']}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 1 }}
-                style={styles.modeCard}
+            {/* Game Mode Cards */}
+            <View style={styles.modesContainer}>
+              {/* Name → Face Mode */}
+              <TouchableOpacity
+                activeOpacity={0.8}
+                onPress={() => navigation.navigate('Quiz', { mode: 'nameToFace' })}
               >
-                <Text style={styles.modeEmoji}>🎭</Text>
-                <Text style={styles.modeTitle}>Name → Face</Text>
-                <Text style={styles.modeDesc}>Match names to photos</Text>
-              </LinearGradient>
-            </TouchableOpacity>
+                <LinearGradient
+                  colors={['#B794F6', '#9F7AEA']}
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 1 }}
+                  style={styles.modeCard}
+                >
+                  <Text style={styles.modeEmoji}>🎭</Text>
+                  <Text style={styles.modeTitle}>Name → Face</Text>
+                  <Text style={styles.modeDesc}>Match names to photos</Text>
+                </LinearGradient>
+              </TouchableOpacity>
 
-            {/* Face → Name Mode */}
-            <TouchableOpacity
-              activeOpacity={0.8}
-              onPress={() => navigation.navigate('Quiz', { mode: 'faceToName' })}
-            >
-              <LinearGradient
-                colors={['#FBB6CE', '#F687B3']}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 1 }}
-                style={styles.modeCard}
+              {/* Face → Name Mode */}
+              <TouchableOpacity
+                activeOpacity={0.8}
+                onPress={() => navigation.navigate('Quiz', { mode: 'faceToName' })}
               >
-                <Text style={styles.modeEmoji}>📸</Text>
-                <Text style={styles.modeTitle}>Face → Name</Text>
-                <Text style={styles.modeDesc}>Match photos to names</Text>
-              </LinearGradient>
+                <LinearGradient
+                  colors={['#FBB6CE', '#F687B3']}
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 1 }}
+                  style={styles.modeCard}
+                >
+                  <Text style={styles.modeEmoji}>📸</Text>
+                  <Text style={styles.modeTitle}>Face → Name</Text>
+                  <Text style={styles.modeDesc}>Match photos to names</Text>
+                </LinearGradient>
+              </TouchableOpacity>
+            </View>
+
+            {/* Score History Button */}
+            <TouchableOpacity
+              style={styles.historyButton}
+              onPress={() => navigation.navigate('ScoreHistory', {})}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.historyIcon}>⭐</Text>
+              <Text style={styles.historyText}>View Score History</Text>
             </TouchableOpacity>
           </View>
-
-          {/* Score History Button */}
-          <TouchableOpacity
-            style={styles.historyButton}
-            onPress={() => navigation.navigate('ScoreHistory', {})}
-            activeOpacity={0.8}
-          >
-            <Text style={styles.historyIcon}>⭐</Text>
-            <Text style={styles.historyText}>View Score History</Text>
-          </TouchableOpacity>
-        </View>
+        </ScrollView>
       </SafeAreaView>
     </GradientBackground>
   );
@@ -90,10 +96,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  content: {
-    flex: 1,
-    padding: SPACING.xl,
+  scrollContent: {
+    flexGrow: 1,
+    minHeight: '100%',
     justifyContent: 'center',
+    paddingVertical: SPACING.lg,
+  },
+  content: {
+    padding: SPACING.xl,
     alignItems: 'center',
   },
   titleContainer: {
