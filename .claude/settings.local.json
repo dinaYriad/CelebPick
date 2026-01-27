@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm start)",
       "Bash(npx tsc:*)",
-      "Bash(node scripts/fetchCelebs.mjs:*)"
+      "Bash(node scripts/fetchCelebs.mjs:*)",
+      "Bash(npx expo install:*)"
     ]
   }
 }

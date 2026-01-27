@@ -6,9 +6,11 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
-import { COLORS, SPACING, TYPOGRAPHY } from '../constants/theme';
+import { GradientBackground } from '../components/GradientBackground';
+import { COLORS, SPACING, TYPOGRAPHY, LAYOUT, SHADOWS } from '../constants/theme';
 
 type HomeScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -21,108 +23,148 @@ type Props = {
 
 export default function HomeScreen({ navigation }: Props) {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        {/* App Title */}
-        <View style={styles.titleContainer}>
-          <Text style={styles.title}>CelebPick</Text>
-          <Text style={styles.subtitle}>Test your celebrity knowledge!</Text>
-        </View>
+    <GradientBackground type="primary">
+      <SafeAreaView style={styles.container}>
+        <View style={styles.content}>
+          {/* App Title with sparkles */}
+          <View style={styles.titleContainer}>
+            <Text style={styles.sparkle}>✨</Text>
+            <Text style={styles.title}>CelebPick</Text>
+            <Text style={styles.sparkle}>✨</Text>
+          </View>
+          <Text style={styles.subtitle}>Match the stars & shine bright!</Text>
 
-        {/* Game Mode Buttons */}
-        <View style={styles.buttonContainer}>
+          {/* Game Mode Cards */}
+          <View style={styles.modesContainer}>
+            {/* Name → Face Mode */}
+            <TouchableOpacity
+              activeOpacity={0.8}
+              onPress={() => navigation.navigate('Quiz', { mode: 'nameToFace' })}
+            >
+              <LinearGradient
+                colors={['#B794F6', '#9F7AEA']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={styles.modeCard}
+              >
+                <Text style={styles.modeEmoji}>🎭</Text>
+                <Text style={styles.modeTitle}>Name → Face</Text>
+                <Text style={styles.modeDesc}>Match names to photos</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+
+            {/* Face → Name Mode */}
+            <TouchableOpacity
+              activeOpacity={0.8}
+              onPress={() => navigation.navigate('Quiz', { mode: 'faceToName' })}
+            >
+              <LinearGradient
+                colors={['#FBB6CE', '#F687B3']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={styles.modeCard}
+              >
+                <Text style={styles.modeEmoji}>📸</Text>
+                <Text style={styles.modeTitle}>Face → Name</Text>
+                <Text style={styles.modeDesc}>Match photos to names</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          </View>
+
+          {/* Score History Button */}
           <TouchableOpacity
-            style={styles.modeButton}
-            onPress={() => navigation.navigate('Quiz', { mode: 'nameToFace' })}
+            style={styles.historyButton}
+            onPress={() => navigation.navigate('ScoreHistory', {})}
+            activeOpacity={0.8}
           >
-            <Text style={styles.buttonText}>Name → Face</Text>
-            <Text style={styles.buttonDescription}>
-              Match celebrity names to photos
-            </Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.modeButton}
-            onPress={() => navigation.navigate('Quiz', { mode: 'faceToName' })}
-          >
-            <Text style={styles.buttonText}>Face → Name</Text>
-            <Text style={styles.buttonDescription}>
-              Match photos to celebrity names
-            </Text>
+            <Text style={styles.historyIcon}>⭐</Text>
+            <Text style={styles.historyText}>View Score History</Text>
           </TouchableOpacity>
         </View>
-
-        {/* Score History Button */}
-        <TouchableOpacity
-          style={styles.historyButton}
-          onPress={() => navigation.navigate('ScoreHistory', {})}
-        >
-          <Text style={styles.historyButtonText}>View Score History</Text>
-        </TouchableOpacity>
-      </View>
-    </SafeAreaView>
+      </SafeAreaView>
+    </GradientBackground>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.background,
   },
   content: {
     flex: 1,
-    padding: SPACING.lg,
+    padding: SPACING.xl,
     justifyContent: 'center',
+    alignItems: 'center',
   },
   titleContainer: {
+    flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: SPACING.xxl,
+    justifyContent: 'center',
+    marginBottom: SPACING.sm,
+  },
+  sparkle: {
+    fontSize: 32,
+    marginHorizontal: SPACING.sm,
   },
   title: {
-    ...TYPOGRAPHY.title,
-    color: COLORS.primary,
-    marginBottom: SPACING.sm,
+    fontSize: 48,
+    fontWeight: '800',
+    color: COLORS.text.primary,
+    textAlign: 'center',
+    letterSpacing: 1,
   },
   subtitle: {
     ...TYPOGRAPHY.body,
+    fontSize: 18,
     color: COLORS.text.secondary,
+    textAlign: 'center',
+    marginBottom: SPACING.xxl,
+    fontWeight: '500',
   },
-  buttonContainer: {
+  modesContainer: {
+    width: '100%',
+    maxWidth: 400,
     marginBottom: SPACING.xl,
   },
-  modeButton: {
-    backgroundColor: COLORS.primary,
-    padding: SPACING.lg,
-    borderRadius: 12,
-    marginBottom: SPACING.md,
-    elevation: 3,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
+  modeCard: {
+    padding: SPACING.xl,
+    borderRadius: LAYOUT.borderRadiusLarge,
+    marginBottom: SPACING.lg,
+    alignItems: 'center',
+    ...SHADOWS.dreamy,
   },
-  buttonText: {
-    ...TYPOGRAPHY.heading,
+  modeEmoji: {
+    fontSize: 48,
+    marginBottom: SPACING.sm,
+  },
+  modeTitle: {
+    fontSize: 24,
+    fontWeight: '700',
     color: COLORS.text.onPrimary,
-    textAlign: 'center',
     marginBottom: SPACING.xs,
   },
-  buttonDescription: {
-    ...TYPOGRAPHY.caption,
+  modeDesc: {
+    fontSize: 14,
     color: COLORS.text.onPrimary,
-    textAlign: 'center',
-    opacity: 0.9,
+    opacity: 0.95,
+    fontWeight: '500',
   },
   historyButton: {
-    borderWidth: 2,
-    borderColor: COLORS.primary,
-    padding: SPACING.md,
-    borderRadius: 12,
+    backgroundColor: COLORS.card,
+    borderRadius: LAYOUT.borderRadiusPill,
+    paddingVertical: SPACING.md,
+    paddingHorizontal: SPACING.xl,
+    flexDirection: 'row',
+    alignItems: 'center',
+    ...SHADOWS.soft,
   },
-  historyButtonText: {
-    ...TYPOGRAPHY.body,
-    color: COLORS.primary,
-    textAlign: 'center',
+  historyIcon: {
+    fontSize: 20,
+    marginRight: SPACING.sm,
+  },
+  historyText: {
+    fontSize: 16,
     fontWeight: '600',
+    color: COLORS.primary,
   },
 });
