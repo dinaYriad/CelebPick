@@ -1,0 +1,302 @@
+[
+  {
+    "id": "Q5383",
+    "name": "David Bowie",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David-Bowie%20Chicago%202002-08-08%20photoby%20Adam-Bielawski-cropped.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4465",
+    "name": "Peter Jackson",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Jackson%20ONZ%20%28cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q5577",
+    "name": "Salvador Dalí",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Salvador%20Dal%C3%AD%201939.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q5104",
+    "name": "Miranda Cosgrove",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Miranda%20Cosgrove%20NickRewind%202022.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q7542",
+    "name": "Prince",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Prince%20Brussels%201986%20%28retouched%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q5443",
+    "name": "Greta Garbo",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Garbo%20in%20Inspiration.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q853",
+    "name": "Andrei Tarkovsky",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrei%20tarkovsky%20stamp%20russia%202007.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q765",
+    "name": "Dario Fo",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dario%20Fo%2C%20Italian%20playwright.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q489",
+    "name": "Bill Maher",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BillMaherSept10.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q2291",
+    "name": "Totò",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/AntonioDeCurtisFoto.png?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q3772",
+    "name": "Quentin Tarantino",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Quentin%20Tarantino%20by%20Gage%20Skidmore.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q835",
+    "name": "Mikhail Bulgakov",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%91%D1%83%D0%BB%D0%B3%D0%B0%D0%BA%D0%BE%D0%B2.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4109",
+    "name": "Chris Rock",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chris%20Rock%202014.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q633",
+    "name": "Neil Young",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Neil%20Young%20Stavernfestivalen%202016%20%28220929%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q2673",
+    "name": "Chuck Norris",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chuck%20Norris%20May%202015.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4189",
+    "name": "Claire Holt",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Claire%20Holt%20at%20the%2047%20Meters%20Down%20premiere%20in%20June%202017%2001.png?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q2685",
+    "name": "Arnold Schwarzenegger",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Arnold%20Schwarzenegger-2019.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q392",
+    "name": "Bob Dylan",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DylanYoungKilkenny140719v2%20%2850%20of%2052%29%20%2852246124397%29%20%28cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q3924",
+    "name": "Kevin Rudolf",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kevin%20Rudolf.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4235",
+    "name": "Miley Cyrus",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Miley%20Cyrus%20Primavera19%20-226%20%2848986293772%29%20%28cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q400",
+    "name": "Jenna Jameson",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jenna%20Jameson%202014.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q873",
+    "name": "Meryl Streep",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meryl%20Streep%20interview%20at%20Festival%20de%20Cannes%202024%20%28cropped%202%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4036",
+    "name": "Richard Steven Horvitz",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Steven%20Horvitz%20Photo%20Op%20GalaxyCon%20Raleigh%202023.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4042",
+    "name": "CeeLo Green",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CeeLo%20Green%20by%20Gage%20Skidmore.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4058",
+    "name": "Kayla Ewell",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kayla%20Ewell%202012%20%28b%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q1785",
+    "name": "Charles Aznavour",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2014.06.23.%20Charles%20Aznavour%20Fot%20Mariusz%20Kubik%2001.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4119",
+    "name": "Adam Carolla",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2017-02-25%20Adam%20Carolla.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4145",
+    "name": "Patrice O'Neal",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Patrice%20Oneal.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q6060",
+    "name": "50 Cent",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/50%20cent%20in%20concert%20%28cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4212",
+    "name": "Ned Beatty",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ned%20Beatty%20at%20the%201990%20Annual%20Emmy%20Awards%20cropped.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q1779",
+    "name": "Louis Armstrong",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis%20Armstrong%20restored.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4227",
+    "name": "James Coburn",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Coburn%20The%20Californians%201959.JPG?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q7241",
+    "name": "Rabindranath Tagore",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rabindranath%20Tagore%20in%201909.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q563",
+    "name": "Brigitte Fontaine",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brigitte%20Fontaine%2020100330%20Salon%20du%20livre%20de%20Paris%205.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q7546",
+    "name": "Ingmar Bergman",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingmar%20Bergman%20%281966%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q3195",
+    "name": "Geoffrey Arend",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoffrey%20Arend%20%28Cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4293",
+    "name": "Jon Abrahams",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jon%20Abrahams%20%28cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4337",
+    "name": "Rodger Bumpass",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rodger%20Bumpass%20-%20Standing%20at%20Panel%20-%20Cropped.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4547",
+    "name": "Daniel Craig",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Craig-62900.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4612",
+    "name": "Marlene Dietrich",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marlene%20Dietrich%20in%20No%20Highway%20%281951%29%20%28Cropped%29.png?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q692",
+    "name": "William Shakespeare",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shakespeare.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4408",
+    "name": "Mr. Lawrence",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mr.%20Lawrence%20on%20Panel%20%28cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q1666",
+    "name": "Jacques Brel",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques%20Brel%20%281962%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4349",
+    "name": "Jimmy Bennett",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy%20Bennett.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q1950",
+    "name": "Alberto Tomba",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alberto%20Tomba.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q5608",
+    "name": "Q5608",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eminem%202021%20Color%20Corrected.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q1955",
+    "name": "Gustav Thöni",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Th%C3%B6ni%201972.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4440",
+    "name": "Eric Bana",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Bana%20at%20the%202009%20Tribeca%20Film%20Festival.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4960",
+    "name": "Jason Lee",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason%20Lee%20-%20Away%20and%20Back%20premiere%20%28cropped%29.jpg?width=600",
+    "source": "Wikidata"
+  },
+  {
+    "id": "Q4461",
+    "name": "Troian Bellisario",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Troian%20Bellisario%20in%20Manila%20%28close-up%29.jpg?width=600",
+    "source": "Wikidata"
+  }
+]
