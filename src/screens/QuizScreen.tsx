@@ -152,6 +152,7 @@ const styles = StyleSheet.create({
   scrollContent: {
     flexGrow: 1,
     padding: SPACING.xl,
+    paddingBottom: SPACING.xxl,
   },
   loadingContainer: {
     flex: 1,
@@ -218,12 +219,13 @@ const styles = StyleSheet.create({
     ...SHADOWS.soft,
   },
   optionsContainer: {
-    flex: 1,
+    marginTop: SPACING.md,
   },
   imageOptionsGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    marginHorizontal: -SPACING.sm,
   },
   textOptionsContainer: {
     width: '100%',
