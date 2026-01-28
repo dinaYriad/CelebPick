@@ -4,6 +4,7 @@ export interface Celebrity {
   id: string;
   name: string;
   imageUrl: string; // Can be require() path or URI
+  gender?: string; // Gender for filtering and quiz customization
 }
 
 export interface QuizQuestion {

@@ -11,6 +11,7 @@ export const CELEBRITIES: Celebrity[] = celebritiesData.map(celeb => ({
   id: celeb.id,
   name: celeb.name,
   imageUrl: celeb.imageUrl,
+  ...(celeb.gender && { gender: celeb.gender }),
 }));
 
 /**
