@@ -143,14 +143,14 @@ export const SHADOWS = {
   },
   success: {
     elevation: 6,
-    shadowColor: '#68D391',  // Green glow
+    shadowColor: '#22C55E',  // Vibrant green glow
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 12,
   },
   error: {
     elevation: 6,
-    shadowColor: '#FC8181',  // Red glow
+    shadowColor: '#EF4444',  // Vibrant red glow
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 12,
