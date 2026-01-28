@@ -38,14 +38,14 @@ export const COLORS = {
   card: 'rgba(255, 255, 255, 0.9)',  // Semi-transparent white
   cardBorder: 'rgba(255, 255, 255, 0.3)',
 
-  // Semantic colors (soft versions)
-  success: '#68D391',        // Soft green
-  successLight: '#C6F6D5',   // Very light green
-  successGlow: 'rgba(104, 211, 145, 0.4)',
+  // Semantic colors (enhanced for visibility)
+  success: '#22C55E',        // Vibrant green (increased contrast)
+  successLight: '#86EFAC',   // Light green (more saturated)
+  successGlow: 'rgba(34, 197, 94, 0.5)',
 
-  error: '#FC8181',          // Soft red
-  errorLight: '#FED7D7',     // Very light red
-  errorGlow: 'rgba(252, 129, 129, 0.4)',
+  error: '#EF4444',          // Vibrant red (increased contrast)
+  errorLight: '#FCA5A5',     // Light red (more saturated)
+  errorGlow: 'rgba(239, 68, 68, 0.5)',
 
   warning: '#F6AD55',        // Soft orange
 
