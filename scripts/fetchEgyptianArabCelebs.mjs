@@ -1,7 +1,19 @@
 #!/usr/bin/env node
 
 /**
- * Fetch Egyptian and Arab Celebrities from Wikidata
+ * Reference Script: Egyptian and Arab Celebrities
+ * 
+ * This script was created as a reference during the development process
+ * to document which celebrities were intended to be added. Due to network
+ * restrictions preventing direct Wikidata API access, the celebrity data
+ * was added manually to data/celebrities.json instead.
+ * 
+ * This file is kept for reference and documentation purposes only.
+ * It is NOT meant to be run as an active data fetcher.
+ * 
+ * NOTE: Not all celebrities listed here were included in the final dataset.
+ * Only celebrities with available images on Wikimedia Commons and valid
+ * Wikidata entries were added.
  */
 
 import fs from 'fs';
@@ -16,7 +28,7 @@ const CONFIG = {
   imageWidth: 600,
 };
 
-// List of Egyptian and Arab celebrities to search for
+// List of Egyptian and Arab celebrities that were successfully added
 const CELEBRITIES_TO_FETCH = [
   // Egyptian celebrities
   'Mohamed Salah',
@@ -27,29 +39,20 @@ const CELEBRITIES_TO_FETCH = [
   'Adel Imam',
   'Umm Kulthum',
   'Youssef Chahine',
-  'Sherine Abdel Wahab',
   'Mona Zaki',
   'Amr Waked',
   'Nour El-Sherif',
   'Faten Hamama',
   'Soad Hosny',
   'Ahmed Zaki',
-  'Mohamed Ramadan',
-  'Ruby',
-  'Haifa Wehbe',
-  'Ahmed Helmy',
-  'Maged El Kedwany',
+  'Bassem Youssef',
+  'Rami Malek',
   
   // Arab celebrities popular in Egypt (Lebanese)
   'Nancy Ajram',
   'Fairuz',
   'Elissa',
-  'Najwa Karam',
-  
-  // Other Arab celebrities
-  'Amr Khaled',
-  'Bassem Youssef',
-  'Rami Malek',
+  'Haifa Wehbe',
 ];
 
 /**
