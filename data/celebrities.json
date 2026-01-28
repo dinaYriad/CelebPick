@@ -316,9 +316,10 @@
   },
   {
     "id": "Q5608",
-    "name": "Q5608",
+    "name": "Eminem",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eminem%202021%20Color%20Corrected.jpg?width=600",
-    "source": "Wikidata"
+    "source": "Wikidata",
+    "gender": "male"
   },
   {
     "id": "Q1955",

@@ -1,4 +1,4 @@
-import { Celebrity } from '../types';
+import { Celebrity, Gender } from '../types';
 import celebritiesData from '../../data/celebrities.json';
 
 /**
@@ -37,10 +37,12 @@ export const getRandomCelebrities = (
 
 /**
  * Get random celebrities filtered by gender
+ * Note: Only returns celebrities that have the gender field populated with the specified value.
+ * Celebrities without gender data will not be included in the results.
  */
 export const getRandomCelebritiesByGender = (
   count: number,
-  gender: string,
+  gender: Gender,
   exclude: string[] = []
 ): Celebrity[] => {
   const available = CELEBRITIES.filter(
