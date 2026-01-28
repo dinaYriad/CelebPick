@@ -26,7 +26,7 @@ const CONFIG = {
  * SPARQL query to fetch celebrities from Wikidata
  */
 const buildSPARQLQuery = (limit) => `
-SELECT DISTINCT ?person ?personLabel ?image WHERE {
+SELECT DISTINCT ?person ?personLabel ?image ?genderLabel WHERE {
   # Must be human
   ?person wdt:P31 wd:Q5.
 
@@ -36,6 +36,9 @@ SELECT DISTINCT ?person ?personLabel ?image WHERE {
   # Restrict to actors OR musicians for faster query
   VALUES ?occupation { wd:Q33999 wd:Q177220 }
   ?person wdt:P106 ?occupation.
+
+  # Get gender (optional)
+  OPTIONAL { ?person wdt:P21 ?gender. }
 
   # Get English label
   SERVICE wikibase:label {
@@ -109,6 +112,7 @@ const processResults = (results) => {
     const name = result.personLabel?.value;
     const personUri = result.person?.value;
     const imageValue = result.image?.value;
+    const gender = result.genderLabel?.value;
 
     // Skip if missing required fields
     if (!name || !personUri || !imageValue) continue;
@@ -124,6 +128,11 @@ const processResults = (results) => {
       imageUrl: getImageUrl(imageValue),
       source: 'Wikidata',
     };
+
+    // Add gender if available
+    if (gender) {
+      celebrity.gender = gender;
+    }
 
     celebrities.push(celebrity);
   }

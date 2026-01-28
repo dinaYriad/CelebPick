@@ -32,13 +32,15 @@ The script generates a JSON file with this structure:
     "id": "Q2263",
     "name": "Tom Hanks",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom_Hanks_TIFF_2019.jpg?width=600",
-    "source": "Wikidata"
+    "source": "Wikidata",
+    "gender": "male"
   },
   {
     "id": "Q4616",
     "name": "Meryl Streep",
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meryl_Streep_2014.jpg?width=600",
-    "source": "Wikidata"
+    "source": "Wikidata",
+    "gender": "female"
   }
 ]
 ```
@@ -95,6 +97,35 @@ VALUES ?occupation { wd:Q33999 wd:Q177220 }
 ?person wdt:P106 ?occupation.
 ```
 
+## Gender Attribute
+
+The celebrity data includes an optional `gender` field that contains the gender information from Wikidata.
+
+### Gender Field Details
+
+- **Property:** Wikidata property P21 (sex or gender)
+- **Values:** Typically "male" or "female" (as labeled in Wikidata)
+- **Optional:** Some celebrities may not have gender data
+- **Use Cases:** 
+  - Filter quiz questions by gender
+  - Create gender-specific quizzes
+  - Balance quiz options by gender
+  - Track gender diversity in quiz selections
+
+### Example Data Structure
+
+Each celebrity object may include the gender field:
+
+```json
+{
+  "id": "Q5383",
+  "name": "David Bowie",
+  "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/...",
+  "source": "Wikidata",
+  "gender": "male"
+}
+```
+
 ## Using the Data in Your App
 
 ### Option 1: Direct Import (Static)
@@ -108,10 +139,28 @@ export const CELEBRITIES: Celebrity[] = celebritiesData.map(celeb => ({
   id: celeb.id,
   name: celeb.name,
   imageUrl: celeb.imageUrl,
+  ...(celeb.gender && { gender: celeb.gender }),
 }));
 ```
 
 **Note:** You'll need to add `"resolveJsonModule": true` to your `tsconfig.json`.
+
+### Filtering by Gender
+
+The celebrity data now includes gender information that can be used for filtering:
+
+```typescript
+import { getRandomCelebritiesByGender } from './data/celebrities';
+
+// Get 4 random male celebrities
+const maleCelebs = getRandomCelebritiesByGender(4, 'male');
+
+// Get 4 random female celebrities
+const femaleCelebs = getRandomCelebritiesByGender(4, 'female');
+
+// With exclusion list
+const moreMales = getRandomCelebritiesByGender(4, 'male', ['Q2263', 'Q5383']);
+```
 
 ### Option 2: Copy-Paste (Current Method)
 

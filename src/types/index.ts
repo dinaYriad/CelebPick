@@ -1,9 +1,12 @@
 export type GameMode = 'nameToFace' | 'faceToName';
 
+export type Gender = 'male' | 'female';
+
 export interface Celebrity {
   id: string;
   name: string;
   imageUrl: string; // Can be require() path or URI
+  gender?: Gender; // Gender for filtering and quiz customization
 }
 
 export interface QuizQuestion {
