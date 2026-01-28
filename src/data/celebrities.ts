@@ -34,3 +34,20 @@ export const getRandomCelebrities = (
   const shuffled = [...available].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, count);
 };
+
+/**
+ * Get random celebrities filtered by gender
+ */
+export const getRandomCelebritiesByGender = (
+  count: number,
+  gender: string,
+  exclude: string[] = []
+): Celebrity[] => {
+  const available = CELEBRITIES.filter(
+    c => !exclude.includes(c.id) && c.gender === gender
+  );
+
+  // Shuffle and return the requested count
+  const shuffled = [...available].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+};
