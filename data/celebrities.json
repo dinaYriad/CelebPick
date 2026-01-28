@@ -348,5 +348,145 @@
     "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Troian%20Bellisario%20in%20Manila%20%28close-up%29.jpg?width=600",
     "source": "Wikidata",
     "gender": "female"
+  },
+  {
+    "id": "Q1354960",
+    "name": "Mohamed Salah",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed%20Salah%202018.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q182308",
+    "name": "Omar Sharif",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Omar%20Sharif%20-%201962.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q477461",
+    "name": "Amr Diab",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amr%20Diab.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q774155",
+    "name": "Nancy Ajram",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nancy%20Ajram%20in%202008.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
+  },
+  {
+    "id": "Q3247658",
+    "name": "Fairuz",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fairuz.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
+  },
+  {
+    "id": "Q375590",
+    "name": "Rami Malek",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rami%20Malek%20by%20Gage%20Skidmore%203.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q289751",
+    "name": "Adel Imam",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adel%20Emam.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q231577",
+    "name": "Elissa",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Elissa%20cropped.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
+  },
+  {
+    "id": "Q234046",
+    "name": "Tamer Hosny",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamer%20Hosny.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q270881",
+    "name": "Mohamed Mounir",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed%20Mounir.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q229190",
+    "name": "Umm Kulthum",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Umkulthum1.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
+  },
+  {
+    "id": "Q152858",
+    "name": "Youssef Chahine",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Youssef%20Chahine%20Cannes.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q235591",
+    "name": "Faten Hamama",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Faten%20Hamama.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
+  },
+  {
+    "id": "Q1193360",
+    "name": "Soad Hosny",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Soad%20Hosny.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
+  },
+  {
+    "id": "Q2405732",
+    "name": "Ahmed Zaki",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ahmed%20Zaki%20Egyptian%20Actor.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q1150716",
+    "name": "Nour El-Sherif",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nour%20El%20Sherif.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q13560065",
+    "name": "Mona Zaki",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Zaki.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
+  },
+  {
+    "id": "Q983941",
+    "name": "Amr Waked",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amr%20Waked%20Berlinale%202016.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q1013653",
+    "name": "Bassem Youssef",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bassem%20Youssef%202018.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "male"
+  },
+  {
+    "id": "Q233428",
+    "name": "Haifa Wehbe",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Haifa%20wehbe.jpg?width=600",
+    "source": "Wikidata",
+    "gender": "female"
   }
 ]
